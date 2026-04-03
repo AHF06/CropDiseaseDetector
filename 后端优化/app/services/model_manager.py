@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 from flask import current_app
-from 后端优化.predict.predictImg import ImagePredictor
+from predict.predictImg import ImagePredictor
 
 
 class ModelManager:

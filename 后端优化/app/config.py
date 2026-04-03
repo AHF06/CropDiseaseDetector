@@ -29,6 +29,13 @@ class Config:
     
     # API 基础URL
     API_BASE_URL = os.getenv('API_BASE_URL', 'http://localhost:5000')
+
+        # ========== 高德地图API ==========
+    AMAP_API_KEY = os.getenv('AMAP_API_KEY', '')
+
+        # ========== LLM 配置 ==========
+    LLM_BASE_URL = os.getenv('LLM_BASE_URL', 'http://localhost:11434')
+    LLM_MODEL = os.getenv('LLM_MODEL', 'qwen2.5')
     
     # 允许的图片格式
     ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'bmp'}

@@ -1,12 +1,11 @@
 import json
-from 后端优化.app.models.base import db, BaseModel
+from app.models.base import db, BaseModel
 
 
 class DetectionRecord(BaseModel):
     """病虫害识别记录模型"""
     __tablename__ = 'detection_records'
     
-    # 注意：字段名和你的数据库表完全一致
     user_id = db.Column(db.Integer, nullable=False, default=0)
     image_path = db.Column(db.String(255), nullable=False)
     annotated_image_path = db.Column(db.String(255), nullable=True)
@@ -19,16 +18,31 @@ class DetectionRecord(BaseModel):
     
     def to_dict(self, base_url=''):
         """转换为字典，供API返回"""
+        # 解析JSON字段
+        bbox_data = []
+        if self.bbox_info:
+            try:
+                bbox_data = json.loads(self.bbox_info)
+            except:
+                bbox_data = []
+        
+        weather_data = {}
+        if self.weather_info:
+            try:
+                weather_data = json.loads(self.weather_info)
+            except:
+                weather_data = {}
+        
         return {
             'id': self.id,
             'user_id': self.user_id,
-            'image_url': f"{base_url}/{self.image_path}" if self.image_path else None,
-            'annotated_image_url': f"{base_url}/{self.annotated_image_path}" if self.annotated_image_path else None,
+            'image_url': f"{base_url}/{self.image_path}".replace('\\', '/') if self.image_path else None,
+            'annotated_image_url': f"{base_url}/{self.annotated_image_path}".replace('\\', '/') if self.annotated_image_path else None,
             'crop_type': self.crop_type,
             'disease_name': self.disease_name,
             'confidence': round(self.confidence, 4),
-            'detections': json.loads(self.bbox_info) if self.bbox_info else [],
-            'weather_info': json.loads(self.weather_info) if self.weather_info else {},
+            'detections': bbox_data,
+            'weather_info': weather_data,
             'ai_advice': self.ai_advice,
             'created_at': self.created_at.strftime('%Y-%m-%d %H:%M:%S')
         }

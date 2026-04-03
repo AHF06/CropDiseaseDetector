@@ -1,6 +1,6 @@
 import json
 from flask import current_app
-from 后端优化.app.services.model_manager import ModelManager
+from app.services.model_manager import ModelManager
 
 
 class DetectionService:
