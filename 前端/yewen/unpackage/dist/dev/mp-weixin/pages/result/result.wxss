@@ -1,0 +1,353 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.result-page.data-v-b615976f {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7f0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 头部导航栏 */
+.result-header.data-v-b615976f {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #2c5e2a, #3a7a36);
+  color: white;
+}
+.result-header .header-left.data-v-b615976f {
+  width: 44px;
+}
+.result-header .header-left .back-icon.data-v-b615976f {
+  font-size: 28px;
+  font-weight: bold;
+}
+.result-header .header-center.data-v-b615976f {
+  flex: 1;
+  text-align: center;
+}
+.result-header .header-center .header-title.data-v-b615976f {
+  font-size: 18px;
+  font-weight: bold;
+}
+.result-header .header-right.data-v-b615976f {
+  width: 80px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+.result-header .header-right .voice-icon.data-v-b615976f, .result-header .header-right .share-icon.data-v-b615976f {
+  font-size: 22px;
+}
+
+/* 语音提示 */
+.voice-tip.data-v-b615976f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #e8f5e9;
+  margin: 12px 16px 0;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.voice-tip .voice-tip-icon.data-v-b615976f {
+  font-size: 18px;
+}
+.voice-tip .voice-tip-text.data-v-b615976f {
+  font-size: 13px;
+  color: #2c5e2a;
+}
+
+/* 内容区域 */
+.result-content.data-v-b615976f {
+  flex: 1;
+  padding: 16px;
+  padding-bottom: 80px;
+}
+
+/* 图片区域 */
+.image-section.data-v-b615976f {
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.image-section .diagnosis-image.data-v-b615976f {
+  width: 100%;
+  height: 280px;
+  background: #e0e0e0;
+}
+.image-section .confidence-badge.data-v-b615976f {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+.image-section .confidence-badge.high.data-v-b615976f {
+  background: #27ae60;
+}
+.image-section .confidence-badge.medium.data-v-b615976f {
+  background: #f39c12;
+}
+.image-section .confidence-badge.low.data-v-b615976f {
+  background: #e74c3c;
+}
+
+/* 卡片通用样式 */
+.result-card.data-v-b615976f, .info-card.data-v-b615976f {
+  background: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.card-title.data-v-b615976f {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f0f0e8;
+}
+.card-title .title-icon.data-v-b615976f {
+  font-size: 20px;
+}
+.card-title .title-text.data-v-b615976f {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.disease-name.data-v-b615976f {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.disease-name .name.data-v-b615976f {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c5e2a;
+}
+.disease-name .severity-tag.data-v-b615976f {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.disease-name .severity-tag.severe.data-v-b615976f {
+  background: #ffebee;
+  color: #c62828;
+}
+.disease-name .severity-tag.moderate.data-v-b615976f {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+.disease-name .severity-tag.mild.data-v-b615976f {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.disease-latin.data-v-b615976f {
+  font-size: 13px;
+  color: #999;
+  font-style: italic;
+}
+.info-item.data-v-b615976f {
+  margin-bottom: 12px;
+}
+.info-item .info-label.data-v-b615976f {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 4px;
+}
+.info-item .info-value.data-v-b615976f {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+.treatment-section.data-v-b615976f {
+  margin-bottom: 16px;
+}
+.treatment-section .section-title.data-v-b615976f {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.treatment-section .section-title .section-icon.data-v-b615976f {
+  font-size: 18px;
+}
+.treatment-section .treatment-list.data-v-b615976f {
+  padding-left: 12px;
+}
+.treatment-section .treatment-list .treatment-item.data-v-b615976f {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+.treatment-section .treatment-list .treatment-item .bullet.data-v-b615976f {
+  color: #2c5e2a;
+  font-weight: bold;
+}
+.treatment-section .treatment-list .treatment-item.warning-item .bullet.data-v-b615976f {
+  color: #e74c3c;
+}
+.similar-list .similar-item.data-v-b615976f {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0e8;
+}
+.similar-list .similar-item .similar-name.data-v-b615976f {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 4px;
+}
+.similar-list .similar-item .similar-diff.data-v-b615976f {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 底部操作栏 */
+.bottom-actions.data-v-b615976f {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: white;
+  border-top: 1px solid #f0f0e8;
+  padding: 12px 16px;
+  padding-bottom: calc(12px + constant(safe-area-inset-bottom));
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+  gap: 12px;
+}
+.bottom-actions .action-btn.data-v-b615976f {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.bottom-actions .action-btn.save-btn.data-v-b615976f {
+  background: #2c5e2a;
+  color: white;
+}
+.bottom-actions .action-btn.voice-btn.data-v-b615976f {
+  background: #f0f5ea;
+  color: #2c5e2a;
+}
+.bottom-actions .action-btn.consult-btn.data-v-b615976f {
+  background: #f0f5ea;
+  color: #2c5e2a;
+}
+
+/* 语音播报状态 */
+.voice-status.data-v-b615976f {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 50px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1000;
+}
+.voice-status .voice-wave.data-v-b615976f {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.voice-status .voice-wave .wave.data-v-b615976f {
+  width: 4px;
+  height: 16px;
+  background: #2c5e2a;
+  border-radius: 2px;
+  animation: wave-b615976f 0.8s ease-in-out infinite;
+}
+.voice-status .voice-wave .wave.data-v-b615976f:nth-child(1) {
+  animation-delay: 0s;
+}
+.voice-status .voice-wave .wave.data-v-b615976f:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.voice-status .voice-wave .wave.data-v-b615976f:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.voice-status .voice-status-text.data-v-b615976f {
+  color: white;
+  font-size: 14px;
+}
+.voice-status .voice-stop.data-v-b615976f {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+}
+@keyframes wave-b615976f {
+0%, 100% {
+    height: 16px;
+}
+50% {
+    height: 30px;
+}
+}
+/* 提示消息 */
+.toast-message.data-v-b615976f {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-size: 14px;
+  z-index: 1000;
+}

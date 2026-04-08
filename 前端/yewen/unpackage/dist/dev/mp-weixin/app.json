@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/community/community",
+    "pages/history/history",
+    "pages/mine/mine",
+    "pages/ai/ai",
+    "pages/result/result",
+    "pages/warning/warning"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "病虫害识别助手",
+    "navigationBarBackgroundColor": "#2c5e2a",
+    "backgroundColor": "#f5f9ef"
+  },
+  "tabBar": {
+    "color": "#8a9a7a",
+    "selectedColor": "#2c5e2a",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "🏠 首页"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "🌾 农友圈"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "📋 植保档案"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "👤 我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

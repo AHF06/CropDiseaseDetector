@@ -1,0 +1,579 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.history-page.data-v-b2d018fa {
+  min-height: 100vh;
+  background: #f5f7f0;
+  padding-bottom: 20px;
+  position: relative;
+}
+.stats-bar.data-v-b2d018fa {
+  display: flex;
+  background: linear-gradient(135deg, #2c5e2a, #3a7a36);
+  margin: 12px;
+  border-radius: 28px;
+  padding: 16px 0;
+  color: white;
+}
+.stat-item.data-v-b2d018fa {
+  flex: 1;
+  text-align: center;
+}
+.stat-item .stat-num.data-v-b2d018fa {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+.stat-item .stat-label.data-v-b2d018fa {
+  font-size: 12px;
+  opacity: 0.9;
+}
+.stat-divider.data-v-b2d018fa {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.search-bar.data-v-b2d018fa {
+  display: flex;
+  gap: 12px;
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+.search-input-area.data-v-b2d018fa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  padding: 10px 16px;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.search-input-area .search-icon.data-v-b2d018fa {
+  font-size: 18px;
+}
+.search-input-area .search-input.data-v-b2d018fa {
+  flex: 1;
+  font-size: 14px;
+}
+.filter-btn.data-v-b2d018fa {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.filter-tags.data-v-b2d018fa {
+  white-space: nowrap;
+  padding: 0 12px;
+  margin-bottom: 16px;
+}
+.filter-tags .tag.data-v-b2d018fa {
+  display: inline-block;
+  padding: 6px 16px;
+  background: white;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-size: 13px;
+  color: #6b7c5e;
+}
+.filter-tags .tag.active.data-v-b2d018fa {
+  background: #2c5e2a;
+  color: white;
+}
+.record-list.data-v-b2d018fa {
+  padding: 0 12px;
+}
+.record-card.data-v-b2d018fa {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.record-card.treated.data-v-b2d018fa {
+  opacity: 0.75;
+  background: #f0f5ea;
+}
+.card-content.data-v-b2d018fa {
+  display: flex;
+  padding: 14px;
+  gap: 12px;
+}
+.card-left .thumbnail.data-v-b2d018fa {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+}
+.card-middle.data-v-b2d018fa {
+  flex: 1;
+}
+.card-middle .disease-name.data-v-b2d018fa {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.card-middle .crop-name.data-v-b2d018fa {
+  font-size: 13px;
+  color: #6b7c5e;
+  margin: 4px 0;
+}
+.card-middle .date-weather.data-v-b2d018fa {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: #999;
+}
+.card-right.data-v-b2d018fa {
+  align-items: flex-end;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.card-right .severity.data-v-b2d018fa {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.card-right .severity-severe.data-v-b2d018fa {
+  background: #ffebee;
+  color: #c62828;
+}
+.card-right .severity-mid.data-v-b2d018fa {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+.card-right .severity-mild.data-v-b2d018fa {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.status-badge.data-v-b2d018fa {
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.treated-badge.data-v-b2d018fa {
+  background: #d4edda;
+  color: #155724;
+}
+.pending-badge.data-v-b2d018fa {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* 卡片底部按钮区域 */
+.card-actions.data-v-b2d018fa {
+  display: flex;
+  border-top: 1px solid #f0f0e8;
+}
+.card-actions .action-btn.data-v-b2d018fa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.card-actions .action-btn .btn-icon.data-v-b2d018fa {
+  font-size: 16px;
+}
+.card-actions .action-btn.treat-btn.data-v-b2d018fa {
+  background: #f8faf3;
+  color: #2c5e2a;
+  border-right: 1px solid #f0f0e8;
+}
+.card-actions .action-btn.delete-btn.data-v-b2d018fa {
+  background: #fef5f5;
+  color: #e74c3c;
+}
+.empty-state.data-v-b2d018fa {
+  text-align: center;
+  padding: 60px 20px;
+}
+.empty-state .empty-icon.data-v-b2d018fa {
+  font-size: 64px;
+  display: block;
+}
+.empty-state .empty-text.data-v-b2d018fa {
+  font-size: 16px;
+  color: #999;
+  margin-top: 16px;
+  display: block;
+}
+.empty-state .empty-hint.data-v-b2d018fa {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 8px;
+  display: block;
+}
+.load-more.data-v-b2d018fa {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 12px;
+}
+.bottom-actions.data-v-b2d018fa {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  padding: 12px 20px;
+  background: transparent;
+}
+.bottom-actions .report-btn.data-v-b2d018fa {
+  background: linear-gradient(135deg, #2c5e2a, #3a7a36);
+  color: white;
+  padding: 14px;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(44, 94, 42, 0.3);
+}
+
+/* 抽屉样式 */
+.drawer-mask.data-v-b2d018fa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+}
+.drawer-content.data-v-b2d018fa, .picker-content.data-v-b2d018fa {
+  width: 100%;
+  background: white;
+  border-radius: 24px 24px 0 0;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.drawer-header.data-v-b2d018fa, .picker-header.data-v-b2d018fa {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+.drawer-body.data-v-b2d018fa, .picker-body.data-v-b2d018fa {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+.filter-section.data-v-b2d018fa {
+  margin-bottom: 20px;
+}
+.filter-section .filter-label.data-v-b2d018fa {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+.filter-section .filter-options.data-v-b2d018fa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-section .filter-options .option.data-v-b2d018fa {
+  padding: 6px 16px;
+  background: #f5f7f0;
+  border-radius: 30px;
+  font-size: 13px;
+}
+.filter-section .filter-options .option.active.data-v-b2d018fa {
+  background: #2c5e2a;
+  color: white;
+}
+.date-range.data-v-b2d018fa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.date-range input.data-v-b2d018fa {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+}
+.drawer-footer.data-v-b2d018fa, .picker-footer.data-v-b2d018fa {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+.drawer-footer .reset-btn.data-v-b2d018fa, .picker-footer .reset-btn.data-v-b2d018fa {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  background: #f5f7f0;
+  border-radius: 40px;
+}
+.drawer-footer .confirm-btn.data-v-b2d018fa, .picker-footer .confirm-btn.data-v-b2d018fa {
+  flex: 2;
+  padding: 12px;
+  text-align: center;
+  background: #2c5e2a;
+  color: white;
+  border-radius: 40px;
+}
+.quick-options.data-v-b2d018fa {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.quick-options .quick-option.data-v-b2d018fa {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  background: #f5f7f0;
+  border-radius: 30px;
+}
+
+/* 报告弹窗 */
+.report-modal.data-v-b2d018fa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.report-content.data-v-b2d018fa {
+  width: 90%;
+  max-height: 85vh;
+  background: white;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.report-header.data-v-b2d018fa {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+  font-size: 18px;
+}
+.report-body.data-v-b2d018fa {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+.report-summary.data-v-b2d018fa {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.report-summary .summary-item.data-v-b2d018fa {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  background: #f5f7f0;
+  border-radius: 16px;
+}
+.report-summary .summary-item .summary-num.data-v-b2d018fa {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c5e2a;
+  display: block;
+}
+.heatmap-section.data-v-b2d018fa, .trend-section.data-v-b2d018fa, .ranking-section.data-v-b2d018fa {
+  margin-bottom: 24px;
+}
+.heatmap-section .section-title.data-v-b2d018fa, .trend-section .section-title.data-v-b2d018fa, .ranking-section .section-title.data-v-b2d018fa {
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: block;
+}
+.heatmap-grid.data-v-b2d018fa {
+  background: #f5f7f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.heatmap-row.data-v-b2d018fa {
+  display: flex;
+}
+.heatmap-cell.data-v-b2d018fa {
+  padding: 12px 4px;
+  text-align: center;
+  border: 0.5px solid #ddd;
+}
+.heatmap-cell .cell-label.data-v-b2d018fa {
+  font-size: 11px;
+  display: block;
+}
+.heatmap-cell .cell-count.data-v-b2d018fa {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+.heatmap-cell.heat-high.data-v-b2d018fa {
+  background: #d32f2f;
+  color: white;
+}
+.heatmap-cell.heat-mid.data-v-b2d018fa {
+  background: #ff9800;
+  color: white;
+}
+.heatmap-cell.heat-low.data-v-b2d018fa {
+  background: #ffeb3b;
+  color: #333;
+}
+.heatmap-cell.heat-none.data-v-b2d018fa {
+  background: #e0e0e0;
+  color: #999;
+}
+.trend-bars.data-v-b2d018fa {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 160px;
+  padding: 12px 0;
+}
+.trend-item.data-v-b2d018fa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+}
+.trend-item .trend-bar.data-v-b2d018fa {
+  width: 30px;
+  background: linear-gradient(to top, #2c5e2a, #52b788);
+  border-radius: 8px 8px 0 0;
+  transition: height 0.3s;
+}
+.trend-item .trend-label.data-v-b2d018fa {
+  font-size: 10px;
+  margin-top: 8px;
+}
+.ranking-item.data-v-b2d018fa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.ranking-item .rank.data-v-b2d018fa {
+  width: 30px;
+  font-weight: bold;
+  color: #2c5e2a;
+}
+.ranking-item .disease-name.data-v-b2d018fa {
+  flex: 1;
+  font-size: 14px;
+}
+.ranking-item .rank-bar.data-v-b2d018fa {
+  height: 8px;
+  background: #52b788;
+  border-radius: 4px;
+}
+.ranking-item .rank-count.data-v-b2d018fa {
+  width: 50px;
+  font-size: 12px;
+  color: #666;
+}
+.report-footer.data-v-b2d018fa {
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+.report-footer .share-btn.data-v-b2d018fa {
+  background: #2c5e2a;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+/* 悬浮机器人 */
+.floating-robot.data-v-b2d018fa {
+  position: fixed;
+  bottom: 70px;
+  right: 18px;
+  width: 64px;
+  height: 64px;
+  background: #f7cd5c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  cursor: pointer;
+  border: 2px solid #fff2cf;
+}
+.robot-avatar.data-v-b2d018fa {
+  font-size: 42px;
+  position: relative;
+  top: 2px;
+}
+.robot-hat.data-v-b2d018fa {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  font-size: 20px;
+  transform: rotate(-12deg);
+}
+.breath-ring.data-v-b2d018fa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(247, 205, 92, 0.4);
+  animation: breathe-b2d018fa 2s infinite;
+  z-index: -1;
+}
+@keyframes breathe-b2d018fa {
+0% {
+    transform: scale(1);
+    opacity: 0.6;
+}
+50% {
+    transform: scale(1.28);
+    opacity: 0.2;
+}
+100% {
+    transform: scale(1);
+    opacity: 0.6;
+}
+}
+.floating-robot.data-v-b2d018fa:active {
+  transform: scale(0.92);
+}

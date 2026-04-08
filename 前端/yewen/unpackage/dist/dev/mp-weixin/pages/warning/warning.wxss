@@ -1,0 +1,448 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.warning-page.data-v-4e882ad5 {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7f0;
+  padding-bottom: 20px;
+}
+
+/* 头部 */
+.warning-header.data-v-4e882ad5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #2c5e2a, #3a7a36);
+  color: white;
+}
+.warning-header .header-left .back-icon.data-v-4e882ad5 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.warning-header .header-center.data-v-4e882ad5 {
+  flex: 1;
+  text-align: center;
+}
+.warning-header .header-center .header-title.data-v-4e882ad5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.warning-header .header-right .refresh-icon.data-v-4e882ad5 {
+  font-size: 22px;
+}
+
+/* 预警类型切换 */
+.warning-type-switch.data-v-4e882ad5 {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+  background: white;
+  border-radius: 50px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.warning-type-switch .type-btn.data-v-4e882ad5 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 40px;
+  transition: all 0.3s;
+}
+.warning-type-switch .type-btn .type-icon.data-v-4e882ad5 {
+  font-size: 20px;
+}
+.warning-type-switch .type-btn .type-text.data-v-4e882ad5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+.warning-type-switch .type-btn.active.data-v-4e882ad5 {
+  background: #2c5e2a;
+}
+.warning-type-switch .type-btn.active .type-text.data-v-4e882ad5 {
+  color: white;
+}
+
+/* 天气卡片 */
+.weather-card.data-v-4e882ad5 {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin: 0 16px 16px;
+  padding: 16px;
+  border-radius: 20px;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.weather-card .weather-icon.data-v-4e882ad5 {
+  font-size: 48px;
+}
+.weather-card .weather-info.data-v-4e882ad5 {
+  flex: 1;
+}
+.weather-card .weather-temp.data-v-4e882ad5 {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+.weather-card .weather-desc.data-v-4e882ad5 {
+  font-size: 14px;
+  color: #666;
+}
+.weather-card .weather-location.data-v-4e882ad5 {
+  font-size: 12px;
+  color: #999;
+}
+.weather-card .weather-detail.data-v-4e882ad5 {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 风险卡片 */
+.risk-card.data-v-4e882ad5 {
+  margin: 0 16px 16px;
+  padding: 16px;
+  border-radius: 20px;
+}
+.risk-card.risk-high.data-v-4e882ad5 {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+  color: white;
+}
+.risk-card.risk-medium.data-v-4e882ad5 {
+  background: linear-gradient(135deg, #ffa502, #e67e22);
+  color: white;
+}
+.risk-card.risk-low.data-v-4e882ad5 {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+}
+.risk-card .risk-header.data-v-4e882ad5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.risk-card .risk-header .risk-icon.data-v-4e882ad5 {
+  font-size: 20px;
+}
+.risk-card .risk-header .risk-title.data-v-4e882ad5 {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.risk-card .risk-level.data-v-4e882ad5 {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+.risk-card .risk-desc.data-v-4e882ad5 {
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+/* 地区信息卡片 */
+.region-info-card.data-v-4e882ad5 {
+  background: white;
+  margin: 0 16px 16px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.region-info-card .info-row.data-v-4e882ad5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0e8;
+}
+.region-info-card .info-row.data-v-4e882ad5:last-child {
+  border-bottom: none;
+}
+.region-info-card .info-row .info-label.data-v-4e882ad5 {
+  font-size: 14px;
+  color: #666;
+}
+.region-info-card .info-row .info-value.data-v-4e882ad5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 因素卡片 */
+.factor-card.data-v-4e882ad5 {
+  background: white;
+  margin: 0 16px 16px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.card-header.data-v-4e882ad5 {
+  margin-bottom: 12px;
+}
+.card-header .card-title.data-v-4e882ad5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.factor-list .factor-item.data-v-4e882ad5 {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f0;
+}
+.factor-list .factor-item .factor-name.data-v-4e882ad5 {
+  width: 70px;
+  font-size: 14px;
+  color: #666;
+}
+.factor-list .factor-item .factor-value.data-v-4e882ad5 {
+  width: 70px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.factor-list .factor-item .factor-impact.data-v-4e882ad5 {
+  flex: 1;
+  text-align: right;
+  font-size: 12px;
+}
+.factor-list .factor-item .factor-impact.positive.data-v-4e882ad5 {
+  color: #e74c3c;
+}
+.factor-list .factor-item .factor-impact.negative.data-v-4e882ad5 {
+  color: #27ae60;
+}
+
+/* 区域选择器 */
+.region-selector.data-v-4e882ad5 {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.region-scroll.data-v-4e882ad5 {
+  white-space: nowrap;
+  display: flex;
+  gap: 10px;
+}
+.region-tab.data-v-4e882ad5 {
+  display: inline-block;
+  padding: 8px 20px;
+  background: white;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #666;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.region-tab.active.data-v-4e882ad5 {
+  background: #2c5e2a;
+  color: white;
+}
+
+/* 预警列表 */
+.warning-list.data-v-4e882ad5 {
+  background: white;
+  margin: 0 16px 16px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.list-header.data-v-4e882ad5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #f8faf3;
+  border-bottom: 1px solid #f0f0e8;
+}
+.list-header .list-title.data-v-4e882ad5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.list-header .list-time.data-v-4e882ad5 {
+  font-size: 11px;
+  color: #999;
+}
+.warning-item.data-v-4e882ad5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f5f5f0;
+  cursor: pointer;
+}
+.warning-item.item-high.data-v-4e882ad5 {
+  background: #fff5f5;
+}
+.warning-item.item-medium.data-v-4e882ad5 {
+  background: #fff8f0;
+}
+.warning-item .warning-left.data-v-4e882ad5 {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.warning-item .warning-level-badge.data-v-4e882ad5 {
+  width: 60px;
+  height: 28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.warning-item .warning-level-badge.badge-high.data-v-4e882ad5 {
+  background: #e74c3c;
+  color: white;
+}
+.warning-item .warning-level-badge.badge-medium.data-v-4e882ad5 {
+  background: #e67e22;
+  color: white;
+}
+.warning-item .warning-level-badge.badge-low.data-v-4e882ad5 {
+  background: #27ae60;
+  color: white;
+}
+.warning-item .warning-content.data-v-4e882ad5 {
+  flex: 1;
+}
+.warning-item .warning-content .warning-name.data-v-4e882ad5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+}
+.warning-item .warning-content .warning-desc.data-v-4e882ad5 {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin-top: 2px;
+}
+.warning-item .warning-right.data-v-4e882ad5 {
+  text-align: right;
+}
+.warning-item .warning-right .warning-weather.data-v-4e882ad5, .warning-item .warning-right .warning-location.data-v-4e882ad5 {
+  font-size: 12px;
+  color: #999;
+  display: block;
+}
+.warning-item .warning-right .warning-arrow.data-v-4e882ad5 {
+  font-size: 18px;
+  color: #ccc;
+  margin-left: 8px;
+}
+
+/* 建议卡片 */
+.advice-card.data-v-4e882ad5 {
+  background: white;
+  margin: 0 16px 16px;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.advice-list .advice-item.data-v-4e882ad5 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f0;
+}
+.advice-list .advice-item.data-v-4e882ad5:last-child {
+  border-bottom: none;
+}
+.advice-list .advice-item .advice-icon.data-v-4e882ad5 {
+  font-size: 20px;
+}
+.advice-list .advice-item .advice-text.data-v-4e882ad5 {
+  flex: 1;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* 详情弹窗 */
+.detail-modal.data-v-4e882ad5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.detail-card.data-v-4e882ad5 {
+  width: 100%;
+  background: white;
+  border-radius: 24px 24px 0 0;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.detail-header.data-v-4e882ad5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0e8;
+}
+.detail-header .detail-title.data-v-4e882ad5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c5e2a;
+}
+.detail-header .detail-close.data-v-4e882ad5 {
+  font-size: 24px;
+  color: #999;
+}
+.detail-content.data-v-4e882ad5 {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+.detail-section.data-v-4e882ad5 {
+  margin-bottom: 20px;
+}
+.detail-section .section-title.data-v-4e882ad5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+.detail-section .section-text.data-v-4e882ad5 {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
